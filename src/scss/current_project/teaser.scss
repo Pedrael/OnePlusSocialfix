@@ -1,0 +1,32 @@
+.teaser {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #C8C8C8 0%, #D8D8D8 100%);
+  .images {
+    display: flex;
+    padding-top: 100px;
+    .left, .right {
+      //width: calc(50% + #{RelativeUnits(150, 1)});
+    }
+    .left {
+      z-index: 2;
+      //width: calc(50% + #{RelativeUnits(150, 1)});
+      @include width(1092);
+      //margin-top: RelativeUnits(100, 1);
+    }
+    .right {
+      z-index: 1;
+      @include width(977);
+      margin-left: RelativeUnits(-200, 1);
+      width: 50%;
+    }
+  }
+
+  .logo {
+    position: absolute;
+    top: 80px;
+    left: calc(50% - #{RelativeUnits(170, 0.5)});
+    @include width(340, 0.5);
+    z-index: 3;
+  }
+}

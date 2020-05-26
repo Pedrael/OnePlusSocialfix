@@ -26,7 +26,7 @@ module.exports = {
     './src/scss/main.scss'
   ],
   output: {
-    filename: './js/bundle.js'
+    filename: './js/oneplus/bundle.js'
   },
   devtool: "source-map",
   module: {
@@ -70,20 +70,20 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin({
-      filename: './css/style.bundle.css',
+      filename: './css/oneplus/style.bundle.css',
       allChunks: true,
     }),
     new CopyWebpackPlugin([{
         from: './src/fonts',
-        to: './fonts'
+        to: './fonts/oneplus'
       },
       {
         from: './src/favicon',
-        to: './favicon'
+        to: './favicon/oneplus'
       },
       {
         from: './src/img',
-        to: './img'
+        to: './img/oneplus'
       }
     ]),
   ].concat(htmlPlugins),
