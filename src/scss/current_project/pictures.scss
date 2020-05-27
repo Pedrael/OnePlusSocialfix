@@ -1,0 +1,38 @@
+.pictures {
+  .string {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: RelativeUnits(14, 1);
+    .w66 {
+      width: 66%;
+    }
+    .w33 {
+      width: 33%;
+    }
+    .w100 {
+      width: 100%;
+    }
+  }
+  .duo {
+    .w66 {
+      @include width(1156);
+    }
+    .w33 {
+      @include width(746);
+    }
+  }
+  .duo2 {
+    .w66 {
+      @include width(1169);
+    }
+    .w33 {
+      @include width(733);
+    }
+  }
+  @include _phone-big {
+    .string:first-child {
+      display: none;
+    }
+  }
+}

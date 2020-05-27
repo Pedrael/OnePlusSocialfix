@@ -1,0 +1,43 @@
+.balerina {
+  .text-slogan {
+    width: 100vw;
+    margin-top: RelativeUnits(-175, 1);
+  }
+  .balerinabalerina {
+    width: 100vw;
+    min-height: RelativeUnits(1200, 1);
+    position: relative;
+    .big, .small {
+      position: absolute;
+    }
+    .big {
+      @include width(1080);
+      top: 0%;
+      right: 7%;
+      z-index: 2;
+      margin-top: -20%;
+    }
+    .small {
+      @include width(782);
+      top: 23%;
+      left: 10%;
+      z-index: 3;
+    }
+  }
+  @include _phone-big {
+    .balerinabalerina {
+      min-height: 350px;
+      .big {
+        margin-top: -20px;
+        right: 0;
+        width: 305px;
+      }
+      .small {
+        width: RelativeUnits(300, 0.3, phone-big);
+        left: 0;
+        top: 10px;
+        margin-left: RelativeUnits(-100, 0.3, phone-big);
+      }
+    }
+  }
+}
