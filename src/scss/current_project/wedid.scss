@@ -7,17 +7,6 @@
     border-radius: 8px;
     padding: RelativeUnits(60, 0.5);
     @include width(1564);
-    .title {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      .line {
-        height: 1px;
-        @include width(438);
-        background: #FDBE10;
-      }
-      h2 { margin: 0 20px; }
-    }
 
     .content {
       width: 100%;

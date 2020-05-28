@@ -1,0 +1,27 @@
+.video {
+  margin-top: RelativeUnits(160, 1.1);
+  iframe {
+    margin-top: RelativeUnits(60, 0.5);
+    @include width(1300, 0.95);
+    height: RelativeUnits(757, 0.95);
+    -webkit-box-shadow: 0px 50px 38px -30px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 50px 38px -30px rgba(0,0,0,0.45);
+    box-shadow: 0px 50px 38px -30px rgba(0,0,0,0.45);
+    @include _phone-big {
+      box-shadow: none !important;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 230%;
+    @include width(1300, 0.95);
+    margin-top: RelativeUnits(60, 0.9);
+    margin-bottom: RelativeUnits(60, 0.5);
+    @include _phone-big {
+      font-size: 14px;
+      line-height: 200%;
+    }
+  }
+}

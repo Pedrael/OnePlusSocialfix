@@ -31,3 +31,17 @@ html {
 				font-weight: 500;
       }
 }
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.line {
+		height: 1px;
+		@include width(438, 1.1);
+		background: #FDBE10;
+	}
+	h2 {
+		margin: 0 RelativeUnits(20, 0.5);
+		text-align: center;
+	}
+}

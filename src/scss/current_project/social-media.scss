@@ -1,0 +1,20 @@
+.social-media {
+  margin-top: RelativeUnits(200, 1);
+  .content {
+    width: 100%;
+    margin-top: RelativeUnits(90, 0.6);
+    .column1 {
+      @include width(811);
+      margin-right: RelativeUnits(10, 1);
+    }
+    .column2 {
+      @include width(799);
+    }
+    .column1, .column2 {
+      .wrap {
+        width: 100%;
+        margin-bottom: RelativeUnits(10, 1);
+      }
+    }
+  }
+}
