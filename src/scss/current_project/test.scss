@@ -45,3 +45,31 @@ html {
 		text-align: center;
 	}
 }
+
+.slider-buttons {
+	display: flex;
+	justify-content: center;
+	.s-button {
+		width: 10px;
+		height: 10px;
+		border-radius: 5px;
+		border: 2px solid black;
+		margin: 0 3px;
+	}
+	.selected, .active {
+		background: black;
+		width: 31px;
+	}
+}
+.desktop {
+	display: flex !important;
+	@include _phone-big {
+		display: none !important;
+	}
+}
+.mobile {
+	display: none !important;
+	@include _phone-big {
+		display: flex !important;
+	}
+}

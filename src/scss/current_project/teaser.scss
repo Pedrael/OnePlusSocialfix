@@ -9,6 +9,9 @@
       margin-bottom: RelativeUnits(-120, 1);
       overflow: hidden;
     }
+    .center {
+      display: none;
+    }
     .left {
       z-index: 2;
       @include width(1092);
@@ -24,8 +27,32 @@
   .logo {
     position: absolute;
     top: 68px;
-    left: calc(50% - #{RelativeUnits(280, 0.5)});
-    @include width(480, 0.5);
+    left: calc(50% - #{RelativeUnits(280, 0.9)});
+    @include width(480, 0.9);
     z-index: 3;
+  }
+
+  @include _phone-big {
+    .images {
+      width: 100vw;
+      .center {
+        width: 100%;
+        display: block;
+        margin-top: 23vw;
+        img {
+          width: 107%;
+          max-width: 107%;
+        }
+      }
+      .right, .left {
+        display: none;
+      }
+    }
+
+    .logo {
+      width: 55vw;
+      height: 37vw;
+      left: calc(50% - 27.5vw);
+    }
   }
 }

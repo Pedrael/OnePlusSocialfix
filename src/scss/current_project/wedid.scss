@@ -21,4 +21,31 @@
       }
     }
   }
+  @include _tablet-big {
+    .container {
+      .content {
+        flex-wrap: wrap;
+        .item {
+          width: 45%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  @include _phone-big {
+    .container {
+      margin-top: -10px;
+      width: 100vw;
+      border-radius: 16px;
+      .content {
+        .item-duplet {
+          width: 100%;
+          .item {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }

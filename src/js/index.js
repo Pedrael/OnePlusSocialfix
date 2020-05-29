@@ -1,15 +1,11 @@
-import jQuery from 'jquery';
-import Header from './header.js';
-import Carousel from './carousel.js';
-//import MyTimeIsNow from './date.js';
-//import Mail from './mail.js';
-import Ripple from './ripple.js';
-import Parallax from './parallax.js';
-//require("./scrollvideo.js");
+import 'owl.carousel';
 
-Header();
-Carousel();
-//Mail();
-//MyTimeIsNow("date-input");
-Ripple();
-Parallax();
+$(document).ready(() => {
+  var slider = $('#wedid-carousel')
+  slider.owlCarousel({
+    loop: true,
+    //rewind: true,
+    items: 1,
+    dotsContainer: '#wedid-dots'
+  })
+})
